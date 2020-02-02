@@ -20,20 +20,20 @@
 
 ```
 { 
-   "head"：
-   {
- 		 "deviceid":"",     //用户设备id
- 		 "lcid":"",         //机器语言id 
- 		 "context":"",      //本次请求客户端的自定义字段：请求什么，就返回什么
- 		 "sign":""		    //本次请求签名 
- 		 "timestamp":"",    //时间戳
- 	}
- 	"user"：                //用户登录信息，如果没有可以为空
- 	{
-		 "uid"："",           //用户uid：唯一标识
-		 "token":""           //用户登录token
+	"head"：
+	{
+		"deviceid":"",     //用户设备id
+		"lcid":"",         //机器语言id 
+		"context":"",      //本次请求客户端的自定义字段：请求什么，就返回什么
+		"sign":""		    //本次请求签名 
+		"timestamp":"",    //时间戳
 	}
- 	"data"：{}              //具体接口的请求信息，不同的接口有不同的格式。
+	"user"：                //用户登录信息，如果没有可以为空
+	{
+		"uid"："",           //用户uid：唯一标识
+		"token":""           //用户登录token
+	}
+	"data"：{}              //具体接口的请求信息，不同的接口有不同的格式。
 }
 ```
 
@@ -85,9 +85,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
- 		"videoid":"",       //视频id
-		"count": 1,         //返回该视频videoid之后的视频数
- 		"type":0            //0：推荐， 1：新鲜， 2：同城
+	"videoid":"",       //视频id
+	"count": 1,         //返回该视频videoid之后的视频数
+	"type":0            //0：推荐， 1：新鲜， 2：同城
 } 
 ```
 
@@ -95,31 +95,30 @@ H5页面的接口，可以不用签名
 
 ```
 {
-
-	   "videolist":
+	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-				"likes":0,      //点赞数
-				"content":"",   //内容
-				"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -134,10 +133,10 @@ H5页面的接口，可以不用签名
 
 ```
 {
- 		"videoid":"",           //视频id
-		"parentcommentid":"",   //父评论id，如果没有父评论，该id为0
-		"start":0,              //请求开始的评论行，从0开始
-		"count": 1,             //请求返还的评论数  
+	"videoid":"",           //视频id
+	"parentcommentid":"",   //父评论id，如果没有父评论，该id为0
+	"start":0,              //请求开始的评论行，从0开始
+	"count": 1,             //请求返还的评论数  
 } 
 ```
 
@@ -147,15 +146,15 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		 "videoid":"",           //视频id
-		 "parentcommentid":"",   //父评论id，如果没有父评论，该id为0
-		 "commentlist":
-		[
-			"likes":0,           //点赞数
-			"content":"",        //内容
-			"commentid":""       //评论id
-			"islike":0,          //是否点赞
-		]
+	"videoid":"",           //视频id
+	"parentcommentid":"",   //父评论id，如果没有父评论，该id为0
+	"commentlist":
+	[
+		"likes":0,           //点赞数
+		"content":"",        //内容
+		"commentid":""       //评论id
+		"islike":0,          //是否点赞
+	]
 }
 ```
 
@@ -169,8 +168,8 @@ H5页面的接口，可以不用签名
 
 ```
 {
- 		"videoid":"",                      //视频id 
- 		"islike":0,                        //是否点赞
+	"videoid":"",                      //视频id 
+	"islike":0,                        //是否点赞
 } 
 ```
 
@@ -193,7 +192,7 @@ H5页面的接口，可以不用签名
 
 ```
 {
- 		"videoid":"",                      //视频id 
+	"videoid":"",                      //视频id 
 } 
 ```
 
@@ -216,8 +215,8 @@ H5页面的接口，可以不用签名
 
 ```
 { 
-		"commentid":"",   //评论id 
-		"like":1,         //1：点赞， 0：取消点赞
+	"commentid":"",   //评论id 
+	"like":1,         //1：点赞， 0：取消点赞
 } 
 ```
 
@@ -240,9 +239,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		 "videoid":"",                    //视频id
-		 "parentcommentid":"",            //父评论id，如果没有父评论，该id为0
-		 "content":""                     //评论内容
+	"videoid":"",                    //视频id
+	"parentcommentid":"",            //父评论id，如果没有父评论，该id为0
+	"content":""                     //评论内容
 }
 ```
 
@@ -267,8 +266,8 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		”start“: 0,                  //话题开始数 
-		"count":0,                   //获取请求话题数
+	”start“: 0,                  //话题开始数 
+	"count":0,                   //获取请求话题数
 }
 ```
 
@@ -278,29 +277,29 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"topiclist":              //话题列表
-		[
-		"topicid":"",          //话题id
-		"topictype":1,         //话题type：1 专题， 2 投票 , 3 其他
-		"topicpic":"",         //话题展示图片
-		"topictitle":""        //话题展示标题
-		"other":{              //topictype为3时，该值有效
-				"taglist"：
-					[
-					"tagid":"",                 //视频tagid
-					"tagname":"",               //视频tag名称
-					"tagpic":"",                //视频tag展示图片
-					"videocount":0,             //视频数
-					"watchs":0                  //观看数
-					]
-				"classifylist"：
-					[
-					"classifyid":"",            //视频分类id
-					"classifyname":"",          //视频分类名称
-					"classifypic":"",           //视频分类展示图片
-					"videocount":0,             //视频数
-					"watchs":0                  //观看数
-					]		
+	"topiclist":              //话题列表
+	[
+	"topicid":"",          //话题id
+	"topictype":1,         //话题type：1 专题， 2 投票 , 3 其他
+	"topicpic":"",         //话题展示图片
+	"topictitle":""        //话题展示标题
+	"other":{              //topictype为3时，该值有效
+		"taglist"：
+			[
+			"tagid":"",                 //视频tagid
+			"tagname":"",               //视频tag名称
+			"tagpic":"",                //视频tag展示图片
+			"videocount":0,             //视频数
+			"watchs":0                  //观看数
+			]
+		"classifylist"：
+			[
+			"classifyid":"",            //视频分类id
+			"classifyname":"",          //视频分类名称
+			"classifypic":"",           //视频分类展示图片
+			"videocount":0,             //视频数
+			"watchs":0                  //观看数
+			]		
 		}
 	]
 }
@@ -316,9 +315,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"classifyid":"",              //视频分类id
-		”start“: 0,                  //开始数 
-		"count":0,                   //请求数
+	"classifyid":"",              //视频分类id
+	”start“: 0,                  //开始数 
+	"count":0,                   //请求数
 }
 ```
 
@@ -330,28 +329,28 @@ H5页面的接口，可以不用签名
 {
 	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-					"likes":0,      //点赞数
-					"content":"",   //内容
-					"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -368,9 +367,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"tagid":"",                 //视频tagid
-		”start“:0,                 //开始数 
-		"count":0,                  //请求数
+	"tagid":"",                 //视频tagid
+	”start“:0,                 //开始数 
+	"count":0,                  //请求数
 }
 ```
 
@@ -380,31 +379,30 @@ H5页面的接口，可以不用签名
 
 ```
 {
-
 	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-					"likes":0,      //点赞数
-					"content":"",   //内容
-					"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -421,9 +419,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	    "topicid":"",             //话题id
-		”start“: 0,                  //专题开始数 
-		"count":0,                //专题请求话题数
+	"topicid":"",             //话题id
+	"start": 0,                  //专题开始数 
+	"count":0,                //专题请求话题数
 }
 ```
 
@@ -433,31 +431,30 @@ H5页面的接口，可以不用签名
 
 ```
 {
-
-	   "videolist":
+	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-					"likes":0,      //点赞数
-					"content":"",   //内容
-					"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -472,7 +469,7 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	    "topicid":"",             //话题id
+	"topicid":"",             //话题id
 }
 ```
 
@@ -483,15 +480,15 @@ H5页面的接口，可以不用签名
 ```
 {
 	"votelist":                     //选项
-[
-	"voteid":"",                  //选项id
-	"votecontent":""              //选项描述
-  　"votecount":""                // 选项投票数
-]
+	[
+		"voteid":"",                  //选项id
+		"votecontent":""              //选项描述
+		"votecount":""                // 选项投票数
+	]
 	"votetitle":"",              //投票标题
 	"content":"",                //投票内容
 	"myvoteid":"",               //我的投票选项
-    "voteallcount":""            //总的投票数
+	"voteallcount":""            //总的投票数
 }
 ```
 
@@ -505,8 +502,8 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	    "topicid":"",             //话题id 
-        "voteid":"",              //选项id
+	"topicid":"",             //话题id 
+	"voteid":"",              //选项id
 }
 ```
 
@@ -544,31 +541,30 @@ H5页面的接口，可以不用签名
 
 ```
 {
-
-	   "videolist":
+	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-					"likes":0,      //点赞数
-					"content":"",   //内容
-					"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -595,13 +591,12 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"username":"",         //用户名
-		"userpic":"",          //头像
-		"userwatches":"",      //观看时长
-		"signature":"",        //个性签名
-		"likescount":0,        //点赞数 
-        "followcount":0,       //关注数
-
+	"username":"",         //用户名
+	"userpic":"",          //头像
+	"userwatches":"",      //观看时长
+	"signature":"",        //个性签名
+	"likescount":0,        //点赞数 
+	"followcount":0,       //关注数
 }
 ```
 
@@ -616,7 +611,7 @@ H5页面的接口，可以不用签名
 ```
 {	
 	"start":0,             //开始数 
-    "count":1              //下拉数
+	"count":1              //下拉数
 }
 ```
 
@@ -626,31 +621,30 @@ H5页面的接口，可以不用签名
 
 ```
 {
-
-	   "videolist":
+	"videolist":
 	[
-			"userid":"",           //视频发布者id
-			"userpic":"",          //视频发布者头像url
-			"username":"",         //视频发布者昵称
-			"title"："",           //标题
-			"videoid":"",          //视频id
-			"videourl":"",         //视频url        
-			"videopic":"",         //视频展示图片
-			"likes"：0,            //点赞数
-			"islike":0,            //是否点赞
-			"follows":0,           //关注数
-			"isfollow":0,          //是否关注
-			"watchs":0,            //观看数
-			"shares": 0,           //分享数
-			"comments":0,          //评论数
-			"classify":"",         //分类名称
-			"tags":["",""],        //标签列表
-			"hotcomments":         //热门评论
-			[
-					"likes":0,      //点赞数
-					"content":"",   //内容
-					"commentid":""  //评论id
-			]
+		"userid":"",           //视频发布者id
+		"userpic":"",          //视频发布者头像url
+		"username":"",         //视频发布者昵称
+		"title"："",           //标题
+		"videoid":"",          //视频id
+		"videourl":"",         //视频url        
+		"videopic":"",         //视频展示图片
+		"likes"：0,            //点赞数
+		"islike":0,            //是否点赞
+		"follows":0,           //关注数
+		"isfollow":0,          //是否关注
+		"watchs":0,            //观看数
+		"shares": 0,           //分享数
+		"comments":0,          //评论数
+		"classify":"",         //分类名称
+		"tags":["",""],        //标签列表
+		"hotcomments":         //热门评论
+		[
+			"likes":0,      //点赞数
+			"content":"",   //内容
+			"commentid":""  //评论id
+		]
 	]
 }
 ```
@@ -688,9 +682,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"username":"",         //用户名
-		"userpic":"",          //头像 
-		"signature":"",        //个性签名 
+	"username":"",         //用户名
+	"userpic":"",          //头像 
+	"signature":"",        //个性签名 
 }
 ```
 
@@ -714,9 +708,9 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"type": 1,          //第三方登录类型，1：qq，2：微信，3微博
-		"auth":"",          //授权code
-        "authtype":0        //0：auth为code， 1：auth为accesstoken
+	"type": 1,          //第三方登录类型，1：qq，2：微信，3微博
+	"auth":"",          //授权code
+	"authtype":0        //0：auth为code， 1：auth为accesstoken
 }
 ```
 
@@ -726,10 +720,10 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"uid":"",              //用户uid
-        "cred":"",             //用户登录凭证
-        "token":""             //用户业务票据
-		”phonemask":""         //用户手机掩码
+	"uid":"",              //用户uid
+	"cred":"",             //用户登录凭证
+	"token":""             //用户业务票据
+	”phonemask":""         //用户手机掩码
 }
 ```
 
@@ -741,7 +735,7 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	    "phone":""                                    //手机号
+	"phone":""                                    //手机号
 }
 ```
 
@@ -765,8 +759,8 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	  "phone":""                                    //手机号
-	  "sms":""                                       //短信
+	"phone":""                                    //手机号
+	"sms":""                                       //短信
 }
 ```
 
@@ -776,10 +770,10 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"uid":"",              //用户uid
-        "cred":"",             //用户登录凭证
-        "token":""             //用户业务票据
-		”phonemask":""         //用户手机掩码
+	"uid":"",              //用户uid
+	"cred":"",             //用户登录凭证
+	"token":""             //用户业务票据
+	”phonemask":""         //用户手机掩码
 }
 ```
 
@@ -793,8 +787,8 @@ H5页面的接口，可以不用签名
 
 ```
 {
-	  "uid":""                                        //用户uid
-	  "cred":""                                       //凭证
+	"uid":""                                        //用户uid
+	"cred":""                                       //凭证
 }
 ```
 
@@ -804,10 +798,10 @@ H5页面的接口，可以不用签名
 
 ```
 {
-		"uid":"",              //用户uid
-        "cred":"",             //用户登录凭证
-        "token":""             //用户业务票据
-		”phonemask":""         //用户手机掩码
+	"uid":"",              //用户uid
+	"cred":"",             //用户登录凭证
+	"token":""             //用户业务票据
+	”phonemask":""         //用户手机掩码
 }
 ```
 
